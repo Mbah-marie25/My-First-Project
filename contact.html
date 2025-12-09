@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — MG Web Studio</title>
+  <meta name="description" content="Contact MG Web Studio to discuss web, SEO, analytics or translation projects." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">MG Web Studio</span>
+        <span class="tagline">Your Partner for Professional Web Solutions</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="section-head">
+      <h2>Contact</h2>
+      <p class="muted">Tell us about your project — we’ll reply quickly with options and next steps.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form id="contact-form" class="card contact-form" onsubmit="return handleContact(event)">
+        <label>
+          Your name
+          <input type="text" name="name" id="name" required placeholder="Your full name">
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" id="email" required placeholder="you@example.com">
+        </label>
+
+        <label>
+          Address
+          <input type="address" name="address" id="address" required placeholder="your current address">
+        </label>
+
+         <label>
+          Phone
+          <input type="tel" name="phone" id="phone" required placeholder="Phone number">
+        </label>
+
+        <label>
+          Project details
+          <textarea name="message" id="message" rows="6" required placeholder="Briefly describe your project and goals"></textarea>
+        </label>
+
+        <div class="form-row">
+          <button class="btn primary" type="submit">Send message</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+
+        <p id="form-msg" class="muted small" aria-live="polite"></p>
+      </form>
+
+      <aside class="card contact-info">
+        <h4>Contact details</h4>
+        <p class="muted">Whatsapp:<a href="https://wa.me/+237682680747"</a>+237682680747<br>Email: <a href="mailto:mbahmariegislaine@icloud.com">mbahmariegislaine@icloud.com</a><br>Location: [Bamenda Cameroon]</p>
+
+        <h4>What to include</h4>
+        <ul>
+          <li>Project goals and timeline</li>
+          <li>Budget range (optional)</li>
+          <li>Preferred contact method</li>
+        </ul>
+
+        <h4>Availability</h4>
+        <p class="muted">Usually responds within 24–48 hours (business days).</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>MG Web Studio</strong><p class="muted">Web development · SEO · Analytics · Translation</p></div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+      </nav>
+      <div class="muted">© 2025 MG Web Studio</div>
+    </div>
+  </footer>
+
+</body>
+</html>
